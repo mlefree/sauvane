@@ -1,0 +1,509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+<head>
+    <title>Sauvane : Calendrier de grossesse - Pregnancy Wheel : NatiWheel</title>
+    <meta name="description"
+          content="NatiWheel : Calendrier de grossesse - Pregnancy Wheel ... Disque de grossesse pour les futures mamans. Pregnancy calendar for mothers-to-be.">
+    <meta name="keywords"
+          content="boutique, prestashop | Pregnancy Calculator Wheel Disque Montre Grossesse NatiWheel Cadeau Cadeaux Gynecologue Gift Gynaecologist Calendrier Calendar Future Maman Futur Papa Mother Dad disque de grossesse, disque grossesse,calendrier grossesse, calendrier de grossesse,calendrier grossesse calcul, calcul grossesse,calculer grossesse,date grossesse,calcul de grossesse,calcul grossesse semaine,calcul semaine de grossesse, calculer semaine grossesse,calculer la grossesse,cadeau grossesse,cadeaux femme enceinte,cadeau future maman,cadeau futur papa,annonce grossesse,annoncer grossesse, faire part grossesse,suivi grossesse,suivi de grossesse,grossesse semaine calcul"/>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
+    <meta name="robots" content="index,follow"/>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+    <link href="themes/mle/css/global.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="modules/productscategory/productscategory.css" rel="stylesheet" type="text/css" media="all"/>
+    <script type="text/javascript" src="js/tools.js"></script>
+
+
+    <script type="text/javascript" src="/js/jquery/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/js/tools.js"></script>
+    <script type="text/javascript" src="/modules/blockcart/ajax-cart.js"></script>
+    <script type="text/javascript" src="/themes/mle/js/tools/treeManagement.js"></script>
+    <script type="text/javascript" src="/modules/productscategory/productscategory.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery.serialScroll-1.2.2-min.js"></script>
+
+    <link rel="alternate" type="application/rss+xml" title="Sauvane"
+          href="modules/feeder/rss.html?id_category=0&amp;orderby=position&amp;orderway=desc"/>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-12197067-5']);
+        _gaq.push(['_trackPageview', '']);
+        _gaq.push(['_trackPageLoadTime']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+
+<body id="index">
+<noscript>
+    <ul>
+        <li>Cette boutique n&eacute;cessite JavaScript afin de fonctionner correctement. Merci de l&#039;activer dans
+            votre navigateur.
+        </li>
+    </ul>
+</noscript>
+<div id="page">
+
+    <!-- Header -->
+    <!-- <title>Sauvane </title> -->
+    <!-- <meta name="description" content="Boutique propulsée par PrestaShop " /> -->
+
+    <div>
+        <table width="100%" class="mle_header">
+            <tr>
+                <td>&nbsp;</td>
+                <td class="mle_header">
+                    <h1 id="logo"><a href="" title="Sauvane"><img src="img/logo.gif" alt="Sauvane"/></a></h1>
+                    <div id="header">
+
+                        <!-- Block languages module -->
+                        <div id="languages_block_top">
+                            <ul id="first-languages">
+                                <li>
+                                    <a href="en/" title="English (English)">
+
+                                        <img src="img/l/1.jpg" alt="en" width="16" height="11"/>
+                                    </a>
+                                </li>
+                                <li class="selected_language">
+                                    <img src="img/l/2.jpg" alt="fr" width="16" height="11"/>
+                                </li>
+                            </ul>
+                        </div>
+                        <script type="text/javascript">
+                            $('ul#first-languages li:not(.selected_language)').css('opacity', 0.3);
+                            $('ul#first-languages li:not(.selected_language)').hover(function () {
+                                $(this).css('opacity', 1);
+                            }, function () {
+                                $(this).css('opacity', 0.3);
+                            });
+                        </script>
+                        <!-- /Block languages module -->
+                        <!-- Block user information module HEADER -->
+                        <div id="header_user">
+                            <p id="header_user_info">
+                                <a href="my-account.html" title="Votre compte">Bienvenue</a>&nbsp;
+                                <a href="my-account.html">identifiez-vous</a>
+                            </p>
+                            <!-- MLE
+                            <ul id="header_nav">
+                                <li id="shopping_cart">
+                                    <a href="order.html" title="Votre panier d&#039;achat">Panier :</a>
+                                        <span class="ajax_cart_quantity hidden"></span><span class="ajax_cart_product_txt hidden">produit</span><span class="ajax_cart_product_txt_s hidden">produits</span>
+                                        <span class="ajax_cart_total hidden"></span>
+                                        <span class="ajax_cart_no_product">(vide)</span>
+                                </li>
+                                 <li id="your_account"><a href="my-account.html" title="Votre compte">Votre compte</a></li>
+                            </ul>
+                            -->
+                        </div>
+                        <!-- /Block user information module HEADER -->
+                        <!-- Block currencies module -->
+                        <div id="currencies_block_top">
+                            <form id="setCurrency" action="/" method="post">
+                                <ul>
+                                    <li class="selected">
+                                        <a href="javascript:setCurrency(1);" title="Euro">€</a>
+                                    </li>
+                                </ul>
+                                <p>
+                                    <input type="hidden" name="id_currency" id="id_currency" value=""/>
+                                    <input type="hidden" name="SubmitCurrency" value=""/>
+                                    Devises
+                                </p>
+                            </form>
+                        </div>
+                        <!-- /Block currencies module --><!-- Block MLEader module -->
+
+                        <div id="mle_header_logo">
+
+                            <!-- <a href="" title="Sauvane">-->
+                            <img src="img/mleader_fr.png" alt="Sauvane"/>
+
+                            <!--
+                            class="selected_language">
+                                         -->
+
+                        </div>
+
+                        <!-- /Block MLEader module -->
+
+                    </div>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+
+    <table width="100%">
+        <tr>
+            <td>&nbsp;</td>
+            <td class="mle_body">
+
+                <!-- Left -->
+                <div id="left_column" class="column">
+
+
+                    <!-- <img src="img/.themes/mle/img/colomn_left.jpg"> -->&nbsp;
+
+                </div>
+
+                <!-- Center -->
+                <div id="center_column">
+
+                    <!-- Module Editorial -->
+                    <div id="editorial_block_center" class="editorial_block">
+                        <img src="modules/editorial/homepage_logo.jpg" alt=""/>
+                        <div class="rte"><h2>Disque de grossesse NatiWheel</h2>
+                            <p><strong> NatiWheel</strong> a &eacute;t&eacute; pens&eacute; pour &ecirc;tre le support
+                                de r&eacute;f&eacute;rence permettant aux professionnels de sant&eacute;, &agrave; la
+                                future maman, ou &agrave; ses proches, de conna&icirc;tre <strong>en un clin
+                                    d'oeil</strong> sans calcul non seulement les <strong>dates importantes</strong> d&rsquo;une
+                                grossesse, mais aussi de suivre l&rsquo;<strong>&eacute;volution du
+                                    b&eacute;b&eacute;</strong>.</p>
+                            <p>&nbsp;</p></div>
+                    </div>
+                    <!-- /Module Editorial -->
+                    <!-- MODULE Home Featured Products -->
+                    <!-- MLE begin -->
+                    <div id="featured-products_block_center" class="block products_block">
+                        <h4>Produits phares</h4>
+                        <div class="block_content">
+                            <!-- MLE value=360 -->
+                            <table width="100%">
+                                <tr>
+                                    <td>
+                                        <ul style="height:280px;">
+                                            <li class="ajax_block_product first_item first_item_of_line last_line">
+                                                <h5><a href="fr/calendrier-de-grossesse/12-natiwheel-pastel.html"
+                                                       title="Pastel (Fran&ccedil;ais) ">Pastel (Fran&ccedil;ais) </a>
+                                                </h5>
+                                                <p class="product_desc"><a
+                                                        href="fr/calendrier-de-grossesse/12-natiwheel-pastel.html"
+                                                        title="Plus d&#039;infos"> Disque de grossesse NatiWheel aux
+                                                    couleurs pastelles </a></p>
+                                                <a href="fr/calendrier-de-grossesse/12-natiwheel-pastel.html"
+                                                   title="Disque de grossesse pastel (français)"
+                                                   class="product_image"><img src="12-83-home/natiwheel-pastel.jpg"
+                                                                              height="160" width="160"
+                                                                              alt="Disque de grossesse pastel (français)"/></a>
+                                                <div>
+                                                    <p class="price_container"><span class="price">16,00 €</span></p>
+                                                    <!-- MLE <a class="button" href="fr/calendrier-de-grossesse/12-natiwheel-pastel.html" title="Plus d&#039;infos">Plus d&#039;infos</a> -->
+                                                    <a class="exclusive ajax_add_to_cart_button"
+                                                       rel="ajax_id_product_12"
+                                                       href="cart.html?qty=1&amp;id_product=12&amp;token=98e38e397d2fc901c5415f39828950c0&amp;add"
+                                                       title="Ajouter">Ajouter</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul style="height:280px;">
+                                            <li class="ajax_block_product item  last_line">
+                                                <h5><a href="fr/calendrier-de-grossesse/14-mixte.html"
+                                                       title="Mixte (fran&ccedil;ais)">Mixte (fran&ccedil;ais)</a></h5>
+                                                <p class="product_desc"><a
+                                                        href="fr/calendrier-de-grossesse/14-mixte.html"
+                                                        title="Plus d&#039;infos"></a></p>
+                                                <a href="fr/calendrier-de-grossesse/14-mixte.html"
+                                                   title="Mixte (français)" class="product_image"><img
+                                                        src="14-69-home/mixte.jpg" height="160" width="160"
+                                                        alt="Mixte (français)"/></a>
+                                                <div>
+                                                    <p class="price_container"><span class="price">16,00 €</span></p>
+                                                    <!-- MLE <a class="button" href="fr/calendrier-de-grossesse/14-mixte.html" title="Plus d&#039;infos">Plus d&#039;infos</a> -->
+                                                    <a class="exclusive ajax_add_to_cart_button"
+                                                       rel="ajax_id_product_14"
+                                                       href="cart.html?qty=1&amp;id_product=14&amp;token=98e38e397d2fc901c5415f39828950c0&amp;add"
+                                                       title="Ajouter">Ajouter</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul style="height:280px;">
+                                            <li class="ajax_block_product last_item  last_line">
+                                                <h5><a href="fr/calendrier-de-grossesse/13-natiwheel-english.html"
+                                                       title="Acidul&eacute; (anglais)">Acidul&eacute; (anglais)</a>
+                                                </h5>
+                                                <p class="product_desc"><a
+                                                        href="fr/calendrier-de-grossesse/13-natiwheel-english.html"
+                                                        title="Plus d&#039;infos"> NatiWheel aux couleurs acidulées en
+                                                    Version Anglaise </a></p>
+                                                <a href="fr/calendrier-de-grossesse/13-natiwheel-english.html"
+                                                   title="Acidulé (anglais)" class="product_image"><img
+                                                        src="13-65-home/natiwheel-english.jpg" height="160"
+                                                        width="160" alt="Acidulé (anglais)"/></a>
+                                                <div>
+                                                    <p class="price_container"><span class="price">14,00 €</span></p>
+                                                    <!-- MLE <a class="button" href="fr/calendrier-de-grossesse/13-natiwheel-english.html" title="Plus d&#039;infos">Plus d&#039;infos</a> -->
+                                                    <a class="exclusive ajax_add_to_cart_button"
+                                                       rel="ajax_id_product_13"
+                                                       href="cart.html?qty=1&amp;id_product=13&amp;token=98e38e397d2fc901c5415f39828950c0&amp;add"
+                                                       title="Ajouter">Ajouter</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- MLE end -->
+                        </div>
+                    </div>
+                    <!-- /MODULE Home Featured Products --><!-- Block MLEdito module -->
+
+                    <div id="editorial_block_center" class="editorial_block">
+                        <div class="rte">
+                            <p>
+                                <b>NatiWheel</b>
+                                est le seul produit vendu en France au grand public qui se base sur le concept du disque
+                                de grossesse utilis&eacute; par les
+                                <b>gyn&eacute;cologues et les sages femmes</b>
+                                pour suivre leurs patientes enceintes. En plus de nombreuses informations pratiques, il
+                                pr&eacute;sente un design &eacute;l&eacute;gant r&eacute;-hauss&eacute; d&#039;une
+                                pierre SWAROVSKI ELEMENTS.
+                            </p>
+                            <br>
+                            <center>
+                                <object width="400" height="320">
+                                    <param name="movie" value="http://www.youtube.com/v/kAStvWuQ3cI&hl=fr&fs=1"></param>
+                                    <param name="allowFullScreen" value="true"></param>
+                                    <param name="allowscriptaccess" value="always"></param>
+                                    <embed src="http://www.youtube.com/v/kAStvWuQ3cI&hl=fr&fs=1"
+                                           type="application/x-shockwave-flash" allowscriptaccess="always"
+                                           allowfullscreen="true" width="400" height="320"></embed>
+                                </object>
+                            </center>
+                            <br>
+                            <p>
+                                C&#039;est ainsi un cadeau pr&eacute;cieux et original &agrave; offrir &agrave; la
+                                future maman, ou au futur papa, ou encore pour l&#039;annonce de la grossesse aux futurs
+                                grands parents par exemple, comme faire-part de grossesse. Le calendrier de grossesse
+                                NatiWheel permettra le suivi de la grossesse en &eacute;tant au plus pr&egrave;s de la
+                                femme enceinte et en suivant tout de l&#039;&eacute;volution du b&eacute;b&eacute;
+                                &agrave; venir!
+                                <b> </b>
+
+                                <b> </b>
+
+                            </p>
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+
+                    <!-- /Block MLEdito module -->
+                </div>
+
+                <!-- Right -->
+                <div id="right_column" class="column">
+
+                    <script type="text/javascript">
+                        var CUSTOMIZE_TEXTFIELD = 1;
+                        var customizationIdMessage = 'Personnalisation ';
+                        var removingLinkText = 'supprimer cet article du panier';
+                    </script>
+
+                    <!-- MODULE Block cart -->
+                    <div id="cart_block" class="block exclusive">
+                        <h4>
+                            <a href="fr/commande">Panier</a>
+                            <span id="block_cart_expand" class="hidden">&nbsp;</span>
+                            <span id="block_cart_collapse">&nbsp;</span>
+                        </h4>
+                        <div class="block_content">
+                            <!-- block summary -->
+                            <div id="cart_block_summary" class="collapsed">
+                                <span class="ajax_cart_quantity" style="display:none;">0</span>
+                                <span class="ajax_cart_product_txt_s" style="display:none">articles</span>
+                                <span class="ajax_cart_product_txt">article</span>
+                                <span class="ajax_cart_total" style="display:none">0,00 €</span>
+                                <span class="ajax_cart_no_product">(vide)</span>
+                            </div>
+                            <!-- block list of products -->
+                            <div id="cart_block_list" class="expanded">
+                                <p id="cart_block_no_products">Aucun produit</p>
+
+
+                                <p id="cart-prices">
+                                    <span>Exp&eacute;dition</span>
+                                    <span id="cart_block_shipping_cost"
+                                          class="price ajax_cart_shipping_cost">0,00 €</span>
+                                    <br/>
+                                    <span>Total</span>
+                                    <span id="cart_block_total" class="price ajax_block_cart_total">0,00 €</span>
+                                </p>
+                                <p id="cart-buttons">
+                                    <a href="fr/commande" class="button_small" title="Panier">Panier</a> <a
+                                        href="fr/commande?step=1" id="button_order_cart" class="exclusive"
+                                        title="Commander">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /MODULE Block cart -->
+                    <!-- Block payment logo module -->
+                    <!-- MLE begin -->
+                    <div id="paiement_logo_block_left" class="paiement_logo_block">
+
+                        <!--<a href="cms.html?id_cms=6">
+                            <img src="themes/mle/img/logo_swarovski.png" alt="Swarovski" width="90px">
+                        </a>-->
+
+                        <br><br><br><br><br>
+
+                        <a href="cms.html?id_cms=7">
+                            <!--
+                            <img src="themes/mle/img/logo_paiement_visa.jpg" alt="visa" />
+                            <img src="themes/mle/img/logo_paiement_mastercard.jpg" alt="mastercard" />
+                            <img src="themes/mle/img/logo_paiement_paypal.jpg" alt="paypal" />
+                            -->
+                            <!--
+                            <a href="#" onclick="javascript:window.open('https://www.paypal.com/fr/cgi-bin/webscr?cmd=xpt/Marketing/popup/OLCWhatIsPayPal-outside','olcwhatispaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=350');"><img  src="https://www.paypalobjects.com/WEBSCR-620-20100419-1/en_US/FR/i/bnr/bnr_horizontal_solution_PP_327wx80h.gif" border="0" alt="Logos de solution PayPal" height="35px">
+                            -->
+                            <img src="themes/mle/img/logo_rembourse.png" alt="Pas Satisfait ?" width="90px">
+                        </a>
+                        <a href="cms.html?id_cms=5">
+                            <!--
+                            <img src="themes/mle/img/logo_paiement_visa.jpg" alt="visa" />
+                            <img src="themes/mle/img/logo_paiement_mastercard.jpg" alt="mastercard" />
+                            <img src="themes/mle/img/logo_paiement_paypal.jpg" alt="paypal" />
+                            -->
+                            <!--
+                            <a href="#" onclick="javascript:window.open('https://www.paypal.com/fr/cgi-bin/webscr?cmd=xpt/Marketing/popup/OLCWhatIsPayPal-outside','olcwhatispaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=350');"><img  src="https://www.paypalobjects.com/WEBSCR-620-20100419-1/en_US/FR/i/bnr/bnr_horizontal_solution_PP_327wx80h.gif" border="0" alt="Logos de solution PayPal" height="35px">
+                            -->
+                            <img src="themes/mle/img/logo_paypal.png" alt="PayPal" width="90px">
+                        </a>
+                        <a href="cms.html?id_cms=1">
+                            <!--
+                            <a href="#" onclick="javascript:window.open('http://www.laposte.fr','olcwhatisposte','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=400');">
+                            -->
+                            <img src="themes/mle/img/logo_poste.png" alt="Collissimo" width="90px">
+                            <img src="themes/mle/img/logo_poste_2.png" alt="la Poste Eco" width="90px">
+                        </a>
+                        <a href="cms.html?id_cms=4">
+                            <img src="themes/mle/img/logo_imprim_vert.png" alt="Label Imprim'Vert" width="90px">
+                        </a>
+                    </div>
+                    <!-- /Block payment logo module -->
+
+                    <!-- MLE -->
+                    <div id="mle_args">
+                        <br>
+                        <!-- Sauvane est un collectif de designer parisien.<br>
+                        Notre but : faire des produits utiles et beaux pour la femme enceinte.<br>
+                        Satisfait ou Rembours�<br>
+                        Imprim'Vert | Made in France<br>
+                        "CRYSTALLIZED� Swarovski Elements"<br>
+                        -->
+                        <!--
+                        <br>
+                        <object width="180" height="150"><param name="movie" value="http://www.youtube.com/v/Gw9PXr-M-8w&hl=en_US&fs=1&border=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/Gw9PXr-M-8w&hl=en_US&fs=1&border=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="180" height="150"></embed></object>
+                        -->
+
+                        <!-- MLE end -->
+                    </div>
+                </div>
+
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+
+    <!-- Footer -->
+
+
+    <table width="100%" class="mle_footer">
+        <tr>
+            <td>&nbsp;</td>
+            <td class="mle_footer">
+                <div id="footer">
+                    <script type="text/javascript" src="/js/pluginDetect.js"></script>
+                    <script type="text/javascript">
+                        plugins = new Object;
+
+                        plugins.adobe_director = (PluginDetect.getVersion("Shockwave") != null) ? 1 : 0;
+                        plugins.adobe_flash = (PluginDetect.getVersion("Flash") != null) ? 1 : 0;
+                        plugins.apple_quicktime = (PluginDetect.getVersion("QuickTime") != null) ? 1 : 0;
+                        plugins.windows_media = (PluginDetect.getVersion("WindowsMediaPlayer") != null) ? 1 : 0;
+                        plugins.sun_java = (PluginDetect.getVersion("java") != null) ? 1 : 0;
+                        plugins.real_player = (PluginDetect.getVersion("RealPlayer") != null) ? 1 : 0;
+
+                    </script>
+                    <script type="text/javascript">
+                        var time_start;
+                        $(window).load(
+                            function () {
+                                time_start = new Date();
+                            }
+                        );
+                        $(window).unload(
+                            function () {
+                                var time_end = new Date();
+                                var pagetime = new Object;
+                                pagetime.type = "pagetime";
+                                pagetime.id_connections = "100314";
+                                pagetime.id_page = "1";
+                                pagetime.time_start = "2019-08-24 14:21:39";
+                                pagetime.token = "233d5eb33ea47bbb52d591c1547624640798830c";
+                                pagetime.time = time_end - time_start;
+                                $.post("statistics.html", pagetime);
+                            }
+                        );
+                    </script><!-- MODULE Block various links -->
+                    <ul class="block_various_links" id="block_various_links_footer">
+                        <!-- MLE
+                        <li class="first_item"><a href="prices-drop.html" title="">Promotions</a></li>
+                        <li class="item"><a href="new-products.html" title="">Nouveaux produits</a></li>
+                        <li class="item"><a href="best-sales.html" title="">Meilleures ventes</a></li>
+                        <li class="last_item">Propuls&eacute; par <a href="http://www.prestashop.com">PrestaShop</a>&trade;</li>
+                        -->
+                        <li class="first_item"><a href="sitemap.html" title="">Plan du site</a></li>
+                        <li class="item"><a href="my-account.html" title="">Mon compte</a></li>
+                        <li class="item"><a href="contact-form.html" title="">Contactez-nous</a></li>
+                        <li class="item"><a href="fr/content/2-mentions-legales" title="Mentions l&eacute;gales">Mentions
+                            l&eacute;gales</a></li>
+                        <li class="item"><a href="fr/content/3-conditions-generales-de-ventes"
+                                            title="C.G.V.">C.G.V.</a></li>
+                        <li class="last_item">2010 &copy; Sauvane &trade;</li>
+                    </ul>
+                    <!-- /MODULE Block various links -->
+                </div>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <!--
+        <tr>
+            <td colspan=3 align=center>
+            <iframe src="http://www.facebook.com/plugins/like.html?href=www.sauvane.com&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe>
+            </td>
+        </tr>
+
+
+        <iframe src="http://www.facebook.com/plugins/like.html?href=www.sauvane.com&amp;layout=standard&amp;show_faces=true&amp;width=160&amp;action=like&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:160px; height:80px;" allowTransparency="true"></iframe>
+
+        <tr>
+            <td colspan=3 align=center><br>
+            <iframe src="http://www.facebook.com/plugins/likebox.html?id=135472383136742&amp;width=160&amp;connections=10&amp;stream=false&amp;header=false&amp;height=255" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:160px; height:255px;" allowTransparency="true"></iframe>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan=3 align=center>
+            <iframe src="http://www.facebook.com/plugins/likebox.html?id=135472383136742&amp;width=550&amp;connections=5&amp;stream=false&amp;header=false&amp;height=180" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:550px; height:180px;" allowTransparency="true"></iframe>
+            </td>
+        </tr>
+        -->
+    </table>
+
+</div>
+</body>
+</html>
